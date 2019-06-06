@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+export PYTHONPATH=/home/levkovitch/Public/third-party/yapf:$PYTHONPATH
+python /home/levkovitch/Public/third-party/yapf/yapf

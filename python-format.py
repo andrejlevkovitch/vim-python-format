@@ -8,7 +8,7 @@ import sys
 import vim
 import os
 
-binary = 'tmp'
+binary = 'yapf'
 
 style = 'file'
 
