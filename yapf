@@ -1,4 +1,3 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-export PYTHONPATH=/home/levkovitch/Public/third-party/yapf:$PYTHONPATH
-python /home/levkovitch/Public/third-party/yapf/yapf
+python3 ~/.local/lib/python3.7/site-packages/yapf --style=chromium

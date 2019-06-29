@@ -10,8 +10,6 @@ import os
 
 binary = 'yapf'
 
-style = 'file'
-
 
 def get_buffer(encoding):
   if platform.python_version_tuple()[0] == '3':
@@ -57,7 +55,6 @@ def main():
     startupinfo.wShowWindow = subprocess.SW_HIDE
 
   # Call formatter.
-  command = [binary, '--style', style]
   p = subprocess.Popen(
       binary,
       stdout=subprocess.PIPE,
