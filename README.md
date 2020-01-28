@@ -8,7 +8,7 @@ You need:
   ```
 - Add path to installed package (`yapf`) to your `PATH`
 - Add next lines to your `.vimrc`:
-  ```
+```vim
 function! PythonFormat()
   let text=getline(1, '$')
   let result=system('yapf --style=chromium', text)
@@ -29,4 +29,4 @@ function! PythonFormat()
 endfunction
 autocmd FileType python nnoremap <buffer> <c-k> :call PythonFormat()<cr>
 autocmd BufWrite *.py call PythonFormat()
-  ```
+```
