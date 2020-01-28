@@ -4,7 +4,7 @@ You need:
 
 - Install yapf:
   ```sh
-  pip3 install yapf
+  apt-get install yapf
   ```
 - Add path to installed package (`yapf`) to your `PATH`
 - Add next lines to your `.vimrc`:
