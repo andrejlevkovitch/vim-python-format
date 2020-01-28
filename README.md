@@ -7,8 +7,8 @@ You need:
   pip3 install yapf
   ```
 - Add path to installed package (`yapf`) to your `PATH`
-- Add next lines to your `.vimrc` 
-  ```vim
+- Add next lines to your `.vimrc`:
+  ```
 function! PythonFormat()
   let text=getline(1, '$')
   let result=system('yapf --style=chromium', text)
