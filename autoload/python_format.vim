@@ -28,7 +28,7 @@ function python_format#format()
   let output_str  = system('yapf --style=chromium', input)
   if v:shell_error == 0 " all right
     let output = split(output_str, "\n")
-    call CopyDiffToBuffer(input, output, bufname("%"))
+    call python_format#CopyDiffToBuffer(input, output, bufname("%"))
 
     " and creare lbuffer
     lexpr ""
